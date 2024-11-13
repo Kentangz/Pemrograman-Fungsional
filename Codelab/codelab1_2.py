@@ -23,7 +23,7 @@ nilai_tertinggi = max(nilai_mahasiswa.values())
 mahasiswa_lulus = {nama: nilai for nama, nilai in nilai_mahasiswa.items() if nilai >= 75}
 nilai_mahasiswa_update = {nama: nilai + 5 if nilai < 75 else nilai for nama, nilai in nilai_mahasiswa.items()}
 
-
+#qeq2
 print("Total nilai mahasiswa:", total_nilai)
 print("Nilai tertinggi:", nilai_tertinggi)
 print("Mahasiswa yang lulus:", mahasiswa_lulus)
