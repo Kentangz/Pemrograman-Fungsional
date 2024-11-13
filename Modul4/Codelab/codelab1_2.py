@@ -28,3 +28,14 @@ print("Total nilai mahasiswa:", total_nilai)
 print("Nilai tertinggi:", nilai_tertinggi)
 print("Mahasiswa yang lulus:", mahasiswa_lulus)
 print("Nilai mahasiswa setelah ditambahkan:", nilai_mahasiswa_update)
+
+from functools import reduce
+
+total_nilai = reduce(lambda x, y: x + y, nilai_mahasiswa.values())
+print(total_nilai)
+nilai_tertinggi = reduce(lambda x, y: x if x > y else y, nilai_mahasiswa.values())
+print(nilai_tertinggi)
+nilai_lulus = dict(filter(lambda x: x[1] >= 75, nilai_mahasiswa.items()))
+print(nilai_lulus)
+nilai_mahasiswa_update = dict(map(lambda x: (x[0], x[1] + 5) if x[1] < 75 else x, nilai_mahasiswa.items()))
+print(nilai_mahasiswa_update)
