@@ -29,5 +29,5 @@ plt.plot(mata_kuliah, jumlah_mahasiswa, color='green')
 plt.subplot(3, 2, 2)
 explode = [0, 0, 0.15, 0, 0]
 plt.title("Jumlah Mahasiswa")
-plt.pie(values, labels=colors, explode=explode, shadow = True)
+plt.pie(jumlah_mahasiswa, labels=mata_kuliah, explode=explode, shadow = True)
 plt.show()
