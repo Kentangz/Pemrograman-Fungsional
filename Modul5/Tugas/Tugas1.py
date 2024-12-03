@@ -55,6 +55,8 @@ bookings = {
 }
 
 # extract film, ticket 
+import matplotlib.pyplot as plt
+# extract film, ticket
 film = [event[0] for event in events]
 ticket = [event[3] for event in events]
 
@@ -89,7 +91,8 @@ plt.grid(True)
 # Pie chart for tickets booked by each user
 plt.subplot(2, 2, 2)
 plt.title("Tickets Booked by User")
-plt.pie(user_ticket_count, labels=user_labels, autopct='%1.0f%%', startangle=90)
+explode = [0, 0, 0, 0.1, 0]
+plt.pie(user_ticket_count, labels=user_labels,shadow=True, autopct='%1.0f%%',explode=explode, startangle=90)
 
 # Show the plot
 plt.tight_layout()
