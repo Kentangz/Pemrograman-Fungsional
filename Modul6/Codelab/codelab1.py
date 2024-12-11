@@ -1,7 +1,7 @@
 from PIL import Image, ImageFilter
 
 
-img = Image.open(r'C:\Users\Lenovo\VSC\GitHub\Pemrograman-Fungsional\Modul6\Codelab\images\Maba-UMM-Sambut-Muktamar.jpg')
+img = Image.open(r'Modul6\Codelab\images\Maba-UMM-Sambut-Muktamar.jpg')
 
 # Terapkan filter CONTOUR
 fil2 = img.filter(ImageFilter.BLUR)

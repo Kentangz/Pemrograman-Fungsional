@@ -19,7 +19,7 @@ result2 = pd.DataFrame(events, columns=["judul", "genre", "tanggal"])
 # 1. Membaca Data dengan Pandas
 # CSV
   # Menyimpan ke file
-events_df = pd.read_csv('events.csv')  # Membaca kembali dari file
+events_df = pd.read_csv(r'Modul5\Codelab\events.csv')  # Membaca kembali dari file
 print("Data yang dibaca dari file CSV:")
 print(events_df)
 

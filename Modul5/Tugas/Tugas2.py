@@ -1,5 +1,5 @@
 import pandas as pd
-file_path = 'Dataset Harga Buah dan Sayur.csv'
+file_path = r'Modul5\Tugas\Dataset Harga Buah dan Sayur.csv'
 data = pd.read_csv(file_path)
 print(f"=== 10 Data Pertama === \n {data.head(10)} \n \n")
 

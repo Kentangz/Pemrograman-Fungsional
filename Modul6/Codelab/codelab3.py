@@ -1,8 +1,8 @@
 from PIL import Image
 
 # TODO 1 : Buka gambar
-cat_stare = Image.open(r'C:\Users\Lenovo\VSC\GitHub\Pemrograman-Fungsional\Modul6\Codelab\images\cat stare.jpg')
-cat_elgato = Image.open(r'C:\Users\Lenovo\VSC\GitHub\Pemrograman-Fungsional\Modul6\Codelab\images\cat el gato.jpg')
+cat_stare = Image.open(r'Modul6\Codelab\images\cat stare.jpg')
+cat_elgato = Image.open(r'Modul6\Codelab\images\cat el gato.jpg')
 
 # TODO 2 : Konversi overlay ke mode RGB (menghilangkan alpha channel)
 overlay_image = cat_elgato.convert('RGB')  
